@@ -1,6 +1,5 @@
 import numpy as np
 import os
-
 import matplotlib.pyplot as plt
 
 class moons_etc:
@@ -31,8 +30,6 @@ class moons_etc:
         param = [resolution, channel, atm_corr, mag, system, extended,
                  template, emlineW, emlineFWHM, emlineF, redshift, seeing,
                  airmass, stray, skyres, NDIT, DIT]
-
-        print(param)
 
         # Build the command string that will run the ETC
         param_string = " ".join([str(par) for par in param])
